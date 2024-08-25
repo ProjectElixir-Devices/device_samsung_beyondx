@@ -15,9 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_beyondx.mk
-
-COMMON_LUNCH_CHOICES := \
-    aosp_beyondx-eng \
-    aosp_beyondx-user \
-    aosp_beyondx-userdebug
+    $(LOCAL_DIR)/lineage_beyondx.mk

@@ -33,26 +33,21 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
 
-## Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+## Inherit some common Elixir stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Project-Elixir
-IS_PHONE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BUILD_APERTURE_CAMERA := true
-FORCE_LAWNCHAIR := true
 ELIXIR_BUILD_TYPE := OFFICIAL
 BUILD_USERNAME := FrEeRuNnEr4EvEr
 BUILD_HOSTNAME := Elixir
-TARGET_INCLUDE_STOCK_ACORE := false
+WITH_GMS := true
+
+TARGET_BUILD_APERTURE_CAMERA := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1440
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := aosp_beyondx
+PRODUCT_NAME := lineage_beyondx
 PRODUCT_DEVICE := beyondx
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G977B
